@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
+// using System.Text; made my own string maker =)
 
 namespace Vector
 {
@@ -139,8 +139,8 @@ namespace Vector
         {
             public void Sort<K>(K[] sequence, IComparer<K> comparer) where K : IComparable<K>
             {
-                if (comparer == null) comparer = Comparer<K>.Default;
-                Array.Sort(sequence, comparer);
+              if (comparer == null) comparer = Comparer<K>.Default;
+              Array.Sort(sequence, comparer);
             }
         }
 

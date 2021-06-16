@@ -58,22 +58,21 @@ namespace Vector
             int[] data = new int[problem_size]; data[0] = 333;
             Random k = new Random(1000);
             for (int i = 1; i < problem_size; i++) data[i] = 100+k.Next(900);
-
             Vector<int> vector = new Vector<int>(problem_size);
 
-
             // ------------------ RandomizedQuickSort ----------------------------------
-
             try
             {
-               Console.WriteLine("\nTest A: Sort integer numbers applying RandomizedQuickSort with AscendingIntComparer: ");
+               Console.WriteLine(
+                   "\nTest A: Sort integer numbers applying RandomizedQuickSort with AscendingIntComparer: ");
                vector = new Vector<int>(problem_size);
                vector.Sorter = new RandomizedQuickSort();
                for (int i = 0; i < problem_size; i++) vector.Add(data[i]);
                Console.WriteLine("Intital data: " + vector.ToString());
-               vector.Sort(new AscendingIntComparer());
+               vector.Sort(new AscendingIntComparer()); //console from QuickSort
                Console.WriteLine("Resulting order: " + vector.ToString());
-               if (!CheckAscending(vector)) throw new Exception("Sorted vector has an incorrect sequence of integers");
+               if (!CheckAscending(vector)) 
+                throw new Exception("Sorted vector has an incorrect sequence of integers");
                Console.WriteLine(" :: SUCCESS");
                result = result + "A";
             }
@@ -84,6 +83,7 @@ namespace Vector
                result = result + "-";
             }
 
+
             try
             {
                Console.WriteLine("\nTest B: Sort integer numbers applying RandomizedQuickSort with DescendingIntComparer: ");
@@ -93,7 +93,8 @@ namespace Vector
                Console.WriteLine("Intital data: " + vector.ToString());
                vector.Sort(new DescendingIntComparer());
                Console.WriteLine("Resulting order: " + vector.ToString());
-               if (!CheckDescending(vector)) throw new Exception("Sorted vector has an incorrect sequence of integers");
+               if (!CheckDescending(vector)) 
+                throw new Exception("Sorted vector has an incorrect sequence of integers");
                Console.WriteLine(" :: SUCCESS");
                result = result + "B";
             }
@@ -255,6 +256,11 @@ namespace Vector
             Console.WriteLine("\n\n ------------------- SUMMARY ------------------- ");
             Console.WriteLine("Tests passed: " + result);
             Console.ReadKey();
+
+            Vector<int> vector2 = new Vector<int>(problem_size);
+            vector2.Sort();
+
+
         }
     }
 }

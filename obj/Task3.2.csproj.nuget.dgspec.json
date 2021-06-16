@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ell_j\\Desktop\\Task3.2\\Task3.2.csproj": {}
+    "C:\\Users\\User\\Desktop\\quickmerge\\mergeandquicksort\\Task3.2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ell_j\\Desktop\\Task3.2\\Task3.2.csproj": {
+    "C:\\Users\\User\\Desktop\\quickmerge\\mergeandquicksort\\Task3.2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ell_j\\Desktop\\Task3.2\\Task3.2.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\quickmerge\\mergeandquicksort\\Task3.2.csproj",
         "projectName": "Task3.2",
-        "projectPath": "C:\\Users\\ell_j\\Desktop\\Task3.2\\Task3.2.csproj",
-        "packagesPath": "C:\\Users\\ell_j\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ell_j\\Desktop\\Task3.2\\obj\\",
+        "projectPath": "C:\\Users\\User\\Desktop\\quickmerge\\mergeandquicksort\\Task3.2.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\quickmerge\\mergeandquicksort\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ell_j\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -52,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
