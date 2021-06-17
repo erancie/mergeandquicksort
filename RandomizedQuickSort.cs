@@ -2,8 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace Vector
-{
+namespace Vector {
     internal class RandomizedQuickSort : ISorter {
       void ISorter.Sort<K>(K[] sequence, IComparer<K> comparer) {
         //**FIX THIS ENTRY POINT
