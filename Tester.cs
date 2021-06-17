@@ -60,6 +60,16 @@ namespace Vector
             for (int i = 1; i < problem_size; i++) data[i] = 100+k.Next(900);
             Vector<int> vector = new Vector<int>(problem_size);
 
+            //Lets Have Some Fun!
+
+            vector = new Vector<int>(problem_size);
+            vector.Sorter = new tst();
+            for (int i = 0; i < problem_size; i++) vector.Add(data[i]);
+            Console.WriteLine("Intital data TST!!!: " + vector.ToString());
+            vector.Sort(new AscendingIntComparer()); //console from QuickSort
+            Console.WriteLine("Resulting order: " + vector.ToString());
+
+            
             // ------------------ RandomizedQuickSort ----------------------------------
             try
             {
@@ -124,6 +134,7 @@ namespace Vector
                Console.WriteLine(exception.ToString());
                result = result + "-";
             }
+
 
 
 
