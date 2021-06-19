@@ -19,7 +19,7 @@ namespace Vector
             for (int i = 1; i < sequence.Length; i++) { //loop through array from [1]
                 int swaps = 0;
                 for (int j = 0; j < sequence.Length - i; j++) {
-                    //IComparer.Compare method for type K  -> true if 'a' is greater than 'b' -> expressed by > 0
+//IComparer.Compare method for type K  -> true if 'a' is greater than 'b' -> expressed by > 0 // = 0 equal // < 0 a is less than b
                     if (comparer.Compare(sequence[j],sequence[j+1]) > 0)
                     {   
                         Swap(sequence, j);
